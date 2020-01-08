@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cadastro de Time</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Inserir time</h2>
+  <p>Informe todos os campos obrigatórios para cadastro</p>
+  <form action="confirmation.html">
+    <div class="form-group">
+      <label for="namesquad">Nome:</label>
+      <input type="text" class="form-control" id="namsquad" nome="namesquad">
+    </div>
+    <div class="form-group">
+      <label for="descsquad">Descrição do time</label>
+      <input type="text" class="form-control" id="descsquad" name="descsquad">
+    </div>
+
+    <div class="form-group">
+    <select name="method" class="custom-select">
+        <label for="metodsquad" id="metodsquad" name="metodsquad"></label>
+          <option selected>Selecione o método</option>
+          <option value="volvo">Scrum</option>
+          <option value="fiat">Kanban</option>
+          <option value="audi">Waterfall</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+    <select name="status" class="custom-select">
+        <label for="statussquad" id="statussquad" name="statussquad"></label>
+          <option selected>Selecione o status</option>
+          <option value="active">Ativo</option>
+          <option value="inative">Inativo</option>
+          <option value="stoped">Paralisado</option>
+    </select>
+    </div>  
+      
+    <div class="form-group">  
+    <label for="posquad">Selecione o PO</label>
+    <input type="text" class="form-control" id="posquad" name="posquad">
+    <div>
+        
+    
+    <div class="form-group">
+        <label for="smsquad">Selecione o SM</label>
+        <input type="text" class="form-control" id="createsquad" name="descsquad">
+      </div>
+      
+    <div class="form-group">
+        <label for="createsquad">Criação</label>
+        <input type="date" class="form-control" id="createsquad" name="descsquad">
+      </div>
+    
+      <div class="form-group">
+        <label for="startsquad">Início do time</label>
+        <input type="date" class="form-control" id="startsquad" name="startsquad">
+      </div>
+      <div class="form-group">
+        <label for="stopsquad">Término do time</label>
+        <input type="date" class="form-control" id="stopsquad" name="stopsquad">
+      </div>
+    <button type="gravsquad" class="btn btn-primary">Gravar</button>
+  </form>
+</div>
+
+</body>
+</html>

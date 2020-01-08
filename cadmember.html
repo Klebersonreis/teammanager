@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cadastro de Membro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Inserir Membro</h2>
+  <p>Informe todos os campos obrigatórios para cadastro</p>
+  <form action="confirmation.html">
+    <div class="form-group">
+      <label for="namemember">Nome:</label>
+      <input type="text" class="form-control" id="nammember" nome="namemember">
+    </div>
+    <div class="form-group">
+    <select name="rolememb" class="custom-select">
+        <label for="rolememb" id="rolememb" name="rolememb"></label>
+          <option selected>Selecione o papel</option>
+          <option value="sm">Scrum Master</option>
+          <option value="po">Product Owner</option>
+          <option value="ac">Agile coach</option>
+          <option value="rte">RTE</option>
+          <option value="prdman">Product Manager</option>
+          <option value="dev">Desenvolvedor</option>
+          <option value="qa">Quality Assurance</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <select name="status" class="custom-select">
+        <label for="squadmemb" id="squadmemb" name="squadmemb"></label>
+          <option selected>Selecione o time</option>
+          <option value="squadmemb1">Squad A</option>
+          <option value="squadmemb2">Squad B</option>
+          <option value="squadmemb3">Squad C</option>
+    </select>
+    </div>        
+    <div class="form-group">
+        <label for="activememb">Ativo </label>
+        <input type="checkbox" class="form-control" id="activememb" name="activememb">
+      </div>
+    <div class="form-group">  
+    <label for="contrmemb">Contratado </label>
+    <input type="checkbox" class="form-control" id="contrmemb" name="contrmemb">
+    <div>
+    <div class="form-group">
+        <label for="pocertifmemb">PO Certificado</label>
+        <input type="checkbox" class="form-control" id="pocertifmemb" name="pocertifmemb">
+      </div>
+    <div class="form-group">
+        <label for="smcertifmemb">SM Certificado</label>
+        <input type="checkbox" class="form-control" id="smcertifmemb" name="smcertifmemb">
+      </div>    
+      <div class="form-group">
+        <label for="subhiredmemb">Terceiro</label>
+        <input type="checkbox" class="form-control" id="subhiredmemb" name="subhiredmemb">
+      </div>
+      <div class="form-group">
+        <label for="emailmemb">E-mail</label>
+        <input type="text" class="form-control" id="emailmemb" name="emailmemb">
+      </div>
+      <div class="form-group">
+        <label for="cellmemb">Celular</label>
+        <input type="text" class="form-control" id="cellmemb" name="cellmemb">
+      </div>
+      <div class="form-group">
+        <label for="ramalmemb">Ramal</label>
+        <input type="text" class="form-control" id="ramalmemb" name="ramalmemb">
+      </div>
+    <button type="gravmemb" class="btn btn-primary">Gravar</button>
+  </form>
+</div>
+</body>
+</html>
